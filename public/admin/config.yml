@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "text"}
+          - {label: "Hero Button Text", name: "hero_button", widget: "string"}
+          - {label: "Demo Section Title", name: "demo_title", widget: "string"}
+          - {label: "Demo GIF", name: "demo_gif", widget: "image"}
+          - {label: "Features Title", name: "features_title", widget: "string"}
+          - {label: "Download Section Title", name: "download_title", widget: "string"}
+          - {label: "Download Description", name: "download_description", widget: "text"}
+          - {label: "Download Button Text", name: "download_button", widget: "string"}
+  - name: "features"
+    label: "Features"
+    folder: "content/features"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
