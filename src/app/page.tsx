@@ -1,3 +1,5 @@
+'use client'
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -98,6 +100,18 @@ export default function Home() {
       {/* Footer */}
       <footer className="px-6 py-8 bg-gray-900 text-white text-center">
         <p>&copy; 2024 Insight. Built for better critical thinking.</p>
+        <div className="mt-4">
+          <button 
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.netlifyIdentity) {
+                window.netlifyIdentity.open()
+              }
+            }}
+            className="text-sm text-gray-400 hover:text-white transition"
+          >
+            Admin Login
+          </button>
+        </div>
       </footer>
     </main>
   )
