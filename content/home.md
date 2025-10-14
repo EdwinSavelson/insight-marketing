@@ -1,6 +1,8 @@
 ---
 title: Insight
-subtitle: AI-powered Chrome extension that detects logical fallacies in real-time
+subtitle: "AI-powered Chrome extension that detects logical fallacies in
+  real-time. It will then give you an explanation of what that text was called
+  out. "
 hero_button: Download Free
 demo_title: See Insight in Action
 demo_gif: /images/news_test_app_10-9-25.gif
