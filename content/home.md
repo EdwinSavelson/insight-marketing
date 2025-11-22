@@ -5,7 +5,7 @@ subtitle: "AI-powered Chrome extension that detects logical fallacies in
   out. "
 hero_button: Download Free
 demo_title: See Insight in Action
-demo_gif: /images/news_test_app_10-9-25.gif
+demo_gif: /images/demo-ezgif.com-video-to-gif-converter.gif
 features_title: Why Choose Insight?
 download_title: Ready to Improve Your Critical Thinking?
 download_description: Download Insight now and start detecting fallacies in
