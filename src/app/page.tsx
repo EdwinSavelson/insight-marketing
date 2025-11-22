@@ -130,7 +130,7 @@ export default async function Home() {
 
       {/* Footer */}
       <footer className="px-6 py-8 bg-gray-900 text-white text-center">
-        <p>&copy; 2024 Insight. Built for better critical thinking.</p>
+        <p>&copy; 2025 Insight. Built for better critical thinking.</p>
         <div className="mt-4">
           <AdminButton />
         </div>
