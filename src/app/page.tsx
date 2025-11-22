@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import AdminButton from './components/AdminButton'
+import LogoTitle from './components/LogoTitle'
 
 async function getHomeContent() {
   const filePath = path.join(process.cwd(), 'content', 'home.md')
@@ -9,6 +10,8 @@ async function getHomeContent() {
   const { data } = matter(fileContent)
   return data
 }
+
+export const revalidate = 0
 
 export default async function Home() {
   const content = await getHomeContent()
