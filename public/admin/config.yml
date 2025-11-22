@@ -14,14 +14,17 @@ collections:
         file: "content/home.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Logo", name: "logo", widget: "image"}
           - {label: "Subtitle", name: "subtitle", widget: "text"}
           - {label: "Hero Button Text", name: "hero_button", widget: "string"}
+          - {label: "Hero Button URL", name: "hero_button_url", widget: "string"}
           - {label: "Demo Section Title", name: "demo_title", widget: "string"}
           - {label: "Demo GIF", name: "demo_gif", widget: "image"}
           - {label: "Features Title", name: "features_title", widget: "string"}
           - {label: "Download Section Title", name: "download_title", widget: "string"}
           - {label: "Download Description", name: "download_description", widget: "text"}
           - {label: "Download Button Text", name: "download_button", widget: "string"}
+          - {label: "Download Button URL", name: "download_button_url", widget: "string"}
   - name: "features"
     label: "Features"
     folder: "content/features"

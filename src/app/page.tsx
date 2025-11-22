@@ -17,15 +17,24 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            {content.title}
-          </h1>
+          <div className="flex items-center justify-center gap-4 mb-6">
+            {content.logo && (
+              <img 
+                src={content.logo} 
+                alt="Logo" 
+                className="h-16 w-16 object-contain"
+              />
+            )}
+            <h1 className="text-5xl font-bold text-gray-900">
+              {content.title}
+            </h1>
+          </div>
           <p className="text-xl text-gray-600 mb-8">
             {content.subtitle}
           </p>
           <div className="flex justify-center gap-4">
             <a 
-              href="#download" 
+              href={content.hero_button_url || "#download"} 
               className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
               {content.hero_button}
@@ -105,7 +114,7 @@ export default async function Home() {
             {content.download_description}
           </p>
           <a 
-            href="../SeniorExperience/client" 
+            href={content.download_button_url || "../SeniorExperience/client"} 
             className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition inline-block"
           >
             {content.download_button}
