@@ -1,6 +1,6 @@
 ---
 title: Insight
-logo: /images/logo.png
+logo: /images/insightlogo.png
 subtitle: "AI-powered Chrome extension that detects logical fallacies in
   real-time. It will then give you an explanation of what that text was called
   out. "
@@ -13,5 +13,5 @@ download_title: Ready to Improve Your Critical Thinking?
 download_description: Download Insight now and start detecting fallacies in
   articles, social media, and debates
 download_button: Download Chrome Extension
-download_button_url: "../SeniorExperience/client"
+download_button_url: https://github.com/EdwinSavelson/SeniorExperience
 ---
