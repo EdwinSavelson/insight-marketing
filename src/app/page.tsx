@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import AdminButton from './components/AdminButton'
 
 async function getHomeContent() {
   const filePath = path.join(process.cwd(), 'content', 'home.md')
@@ -119,16 +120,7 @@ export default async function Home() {
       <footer className="px-6 py-8 bg-gray-900 text-white text-center">
         <p>&copy; 2024 Insight. Built for better critical thinking.</p>
         <div className="mt-4">
-          <button 
-            onClick={() => {
-              if (typeof window !== 'undefined' && window.netlifyIdentity) {
-                window.netlifyIdentity.open()
-              }
-            }}
-            className="text-sm text-gray-400 hover:text-white transition"
-          >
-            Admin Login
-          </button>
+          <AdminButton />
         </div>
       </footer>
     </main>
