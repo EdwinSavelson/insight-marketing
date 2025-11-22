@@ -11,7 +11,7 @@ async function getHomeContent() {
   return data
 }
 
-export const revalidate = 0
+
 
 export default async function Home() {
   const content = await getHomeContent()
