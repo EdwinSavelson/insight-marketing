@@ -13,5 +13,5 @@ download_title: Ready to Improve Your Critical Thinking?
 download_description: Download Insight now and start detecting fallacies in
   articles, social media, and debates
 download_button: Download Chrome Extension
-download_button_url: https://github.com/EdwinSavelson/SeniorExperience
+download_button_url: "https://github.com/EdwinSavelson/SeniorExperience"
 ---
